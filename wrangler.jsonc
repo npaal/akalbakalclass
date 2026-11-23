@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Harus sama persis dengan nama Worker di dashboard Cloudflare
+  "name": "akalbakalclass",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*", "/img/*"]
+  },
+  // Tempat simpan data & gambar.
+  // Kalau build gagal karena KV, isi "id" dengan ID namespace akalbakal-data
+  // (Storage & databases > Workers KV > salin kolom ID), contoh:
+  // { "binding": "DATA", "id": "0123456789abcdef0123456789abcdef" }
+  "kv_namespaces": [{ "binding": "DATA" }],
+  "observability": { "enabled": true }
+}
