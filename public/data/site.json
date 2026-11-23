@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "name": "AkalBakal Digital Class",
+    "handle": "akalbakal.class",
+    "tagline": "Kelas dan tools digital dari tim AkalBakal Creative Digital. Dipelajari sekali, dipakai terus buat kerjaan kamu.",
+    "badge": "Digital Creative Agency · Sidoarjo",
+    "avatar": "/assets/img/logo.webp"
+  },
+  "links": [
+    {
+      "id": "l1",
+      "type": "member",
+      "title": "Member Area Class",
+      "desc": "Sudah beli? Masuk ke sini buat buka materinya.",
+      "url": ""
+    },
+    {
+      "id": "l2",
+      "type": "free",
+      "title": "Aset Gratis: contoh isi portofolio",
+      "desc": "Checkout gratis dulu, link Google Drive dikirim otomatis.",
+      "url": ""
+    }
+  ],
+  "catalog": {
+    "label": "Promo",
+    "headline": "Portofolio kamu masih numpuk di galeri HP?",
+    "copy": "Kelas yang ngajarin kamu bikin website portofolio cukup isi data lalu klik. Satu link, siap ditaruh di bio dan dikirim ke calon klien."
+  },
+  "products": [
+    {
+      "id": "p1",
+      "title": "Portofolio Digital Sekali Klik",
+      "thumb": "",
+      "label": "Baru",
+      "desc": "Isi data, pilih karya terbaik, klik publish. Jadi website portofolio yang bisa kamu update kapan aja.",
+      "modules": [
+        "Kenalan sama builder dan contoh hasil jadi",
+        "Nyiapin bahan: foto, video, dan cerita proyek",
+        "Isi profil, layanan, dan kontak",
+        "Nyusun karya unggulan biar enak dilihat",
+        "Atur warna dan tampilan sesuai personal brand",
+        "Publish dan dapat link sendiri",
+        "Pasang link di bio Instagram dan TikTok",
+        "Update portofolio tanpa ngulang dari nol"
+      ],
+      "priceOld": 299000,
+      "pricePromo": 99000,
+      "cta": "Belajar Sekarang",
+      "url": ""
+    }
+  ],
+  "videos": [],
+  "testimonials": [],
+  "benefits": [],
+  "faqs": [],
+  "footer": {
+    "instagram": "",
+    "whatsapp": "",
+    "note": "AkalBakal Creative Digital · Wonoayu, Sidoarjo"
+  }
+}

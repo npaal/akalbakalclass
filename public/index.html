@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AkalBakal Digital Class</title>
+  <meta name="description" content="Kelas dan tools digital dari AkalBakal Creative Digital. Bikin portofolio digital sekali klik, plus aset gratis buat kamu.">
+  <meta property="og:title" content="AkalBakal Digital Class">
+  <meta property="og:description" content="Kelas dan tools digital dari AkalBakal Creative Digital.">
+  <meta property="og:image" content="/assets/img/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FCF8F1">
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preload" href="/assets/img/logo.webp" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css?v=3">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="spark" viewBox="0 0 24 24"><path d="M12 1.5c.6 5.6 4.9 9.9 10.5 10.5-5.6.6-9.9 4.9-10.5 10.5C11.4 16.9 7.1 12.6 1.5 12 7.1 11.4 11.4 7.1 12 1.5Z" fill="currentColor"/></symbol>
+    <symbol id="bolt" viewBox="0 0 24 24"><path d="M13.5 2 5 13.5h6L9.5 22 19 9.5h-6.2L13.5 2Z" fill="currentColor"/></symbol>
+    <symbol id="lock" viewBox="0 0 24 24"><path d="M7 10V7a5 5 0 0 1 10 0v3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><rect x="4" y="10" width="16" height="11" rx="3" fill="currentColor"/></symbol>
+    <symbol id="gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="5" rx="1.5" fill="currentColor"/><rect x="5" y="13" width="14" height="8" rx="1.5" fill="currentColor"/><path d="M12 8v13M12 8c-1.5-4-6-4.5-6-1.6C6 8 9 8 12 8Zm0 0c1.5-4 6-4.5 6-1.6C18 8 15 8 12 8Z" fill="none" stroke="var(--cream)" stroke-width="1.6"/></symbol>
+    <symbol id="play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5L8 5.5Z" fill="currentColor"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <noscript><p style="text-align:center;padding:20px">Aktifkan JavaScript untuk melihat katalog.</p></noscript>
+  <main class="page" id="app" aria-busy="true">
+    <header class="profile">
+      <div class="avatar"><img id="avatar" src="/assets/img/logo.webp" alt="Logo AkalBakal" width="132" height="132" fetchpriority="high"></div>
+      <h1 id="name">AkalBakal Digital Class</h1>
+      <p class="handle" id="handle"></p>
+      <p class="tagline" id="tagline"></p>
+      <p class="badge" id="badge"></p>
+    </header>
+
+    <section class="links" id="links" aria-label="Akses cepat"></section>
+
+    <section class="catalog" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-head">
+        <span class="pill" id="catalog-label"></span>
+        <h2 id="catalog-title"></h2>
+        <p id="catalog-copy"></p>
+      </div>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="block" id="videos-wrap" hidden aria-labelledby="videos-title">
+      <div class="section-head">
+        <h2 id="videos-title"><svg class="spark-ico"><use href="#spark"/></svg>Hasil karya</h2>
+        <p>Klik buat nonton.</p>
+      </div>
+      <div class="videos" id="videos"></div>
+    </section>
+
+    <section class="block" id="testi-wrap" hidden aria-labelledby="testi-title">
+      <div class="section-head">
+        <h2 id="testi-title"><svg class="spark-ico"><use href="#spark"/></svg>Kata mereka</h2>
+      </div>
+      <div class="testis" id="testis"></div>
+    </section>
+
+    <section class="block" id="benefit-wrap" hidden aria-labelledby="benefit-title">
+      <div class="section-head">
+        <h2 id="benefit-title"><svg class="spark-ico"><use href="#spark"/></svg>Yang kamu dapat</h2>
+      </div>
+      <div class="benefits" id="benefits"></div>
+    </section>
+
+    <section class="block" id="faq-wrap" hidden aria-labelledby="faq-title">
+      <div class="section-head">
+        <h2 id="faq-title"><svg class="spark-ico"><use href="#spark"/></svg>Sering ditanya</h2>
+      </div>
+      <div class="faqs" id="faqs"></div>
+    </section>
+
+    <footer class="foot">
+      <div class="foot-links" id="foot-links"></div>
+      <p id="foot-note"></p>
+    </footer>
+  </main>
+
+  <dialog class="modal" id="video-modal" aria-label="Putar video">
+    <button class="modal-close" type="button" aria-label="Tutup">×</button>
+    <div class="modal-frame" id="modal-frame"></div>
+  </dialog>
+
+  <script src="/assets/js/app.js?v=3" defer></script>
+</body>
+</html>

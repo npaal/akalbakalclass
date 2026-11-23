@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin · AkalBakal Digital Class</title>
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css?v=3">
+  <link rel="stylesheet" href="/assets/css/admin.css?v=3">
+</head>
+<body class="admin">
+  <section class="login" id="login">
+    <form class="login-card" id="login-form">
+      <img src="/assets/img/logo.webp" alt="AkalBakal" width="96" height="96">
+      <h1>Admin Class</h1>
+      <p>Masukkan password admin.</p>
+      <input type="password" id="pass" autocomplete="current-password" placeholder="Password" required>
+      <button class="btn" type="submit">Masuk</button>
+      <p class="login-msg" id="login-msg" role="alert"></p>
+    </form>
+  </section>
+
+  <div class="shell" id="shell" hidden>
+    <header class="topbar">
+      <div class="topbar-left">
+        <img src="/assets/img/logo.webp" alt="" width="40" height="40">
+        <div>
+          <strong>Admin Class</strong>
+          <span id="mode-note"></span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <a class="ghost" href="/" target="_blank" rel="noopener">Lihat halaman</a>
+        <button class="ghost" type="button" id="export">Backup</button>
+        <label class="ghost" for="import">Restore<input type="file" id="import" accept="application/json,.json" hidden></label>
+        <button class="ghost" type="button" id="logout">Keluar</button>
+        <button class="btn save" type="button" id="save">Simpan</button>
+      </div>
+    </header>
+
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Bagian"></nav>
+    <main class="editor" id="editor"></main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/assets/js/admin.js?v=3" defer></script>
+</body>
+</html>
